@@ -232,7 +232,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: rgba(111, 124, 74, 0.884);
+  color: rgba(171, 179, 149, 0.884);
 }
 
 .nav-menu .drop-down > a:after {
@@ -668,6 +668,10 @@ section {
   transition: 0.5s;
   color: #fff;
   background: linear-gradient(-45deg, #dbffcd, #156834, #23a6d5, #23d5ab);
+  border-radius: 20px;
+  
+  box-shadow:  20px 20px 40px #bababa,
+              -20px -20px 40px #ffffff;
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   position: relative;
@@ -1093,7 +1097,10 @@ section {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  background: #ffffff;
+  box-shadow:  20px 20px 40px #bababa,
+              -20px -20px 40px #ffffff;
 }
 
 .pricing h3 {
@@ -1232,7 +1239,7 @@ section {
 .faq .faq-list li {
   padding: 30px;
   background: #fff;
-  border-radius: 5px;
+  border-radius: 20px;
   position: relative;
 }
 
@@ -1299,9 +1306,12 @@ section {
 .contact .info-box {
   color: #444444;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+ 
   padding: 20px 0 30px 0;
-  background: #fff;
+  border-radius: 25px;
+  background: #ffffff;
+  box-shadow:  20px 20px 40px #bababa,
+              -20px -20px 40px #ffffff;
 }
 
 .contact .info-box i {
@@ -1328,7 +1338,10 @@ section {
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
-  background: #fff;
+  border-radius: 25px;
+  background: #ffffff;
+  box-shadow:  20px 20px 40px #bababa,
+              -20px -20px 40px #ffffff;
 }
 
 .contact .php-email-form .validate {
