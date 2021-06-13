@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo {
-  font-size: 32px;
+  font-size: 20px;
   margin: 0;
   line-height: 1;
   font-weight: 400;
@@ -132,9 +132,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .logo img {
   width: auto; 
-  height: 36px; 
+  height: 28px; 
   padding-bottom: 9px;
-  margin-right: -5px;
+  margin-right: -8px;
 }
 
 @media (max-width: 992px) {
@@ -142,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 12px 0;
   }
   #header .logo {
-    font-size: 28px;
+    font-size: 20px;
   }
 }
 
@@ -224,15 +224,9 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.nav-menu .drop-down ul a {
-  padding: 10px 20px;
-  font-size: 14px;
-  text-transform: none;
-  color: #1b5217f2;
-}
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: rgba(171, 179, 149, 0.884);
+  color: rgb(51, 51, 51);
 }
 
 .nav-menu .drop-down > a:after {
@@ -275,31 +269,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Get Startet Button */
-.get-started-btn {
-  margin-left: 25px;
-  color: #fff;
-  border-radius: 5px;
-  padding: 6px 25px 8px 25px;
-  white-space: nowrap;
-  transition: 0.3s;
-  font-size: 14px;
-  font-weight: 600;
-  display: inline-block;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-}
-
-.get-started-btn:hover {
-  border-color: #fff;
-  color: #fff;
-}
-
-@media (max-width: 992px) {
-  .get-started-btn {
-    margin: 0 48px 0 0;
-    padding: 6px 18px;
-  }
-}
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
@@ -318,7 +287,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .mobile-nav {
@@ -329,7 +298,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 15px;
   z-index: 9999;
   overflow-y: auto;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.912);
   transition: ease-in-out 0.2s;
   opacity: 0;
   visibility: hidden;
@@ -346,14 +315,14 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #1b5217f2;
+  color: #000000f2;
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: rgba(111, 124, 74, 0.884);
+  color: rgba(80, 80, 80, 0.884);
   text-decoration: none;
 }
 
@@ -444,7 +413,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h2 {
-  color: rgba(36, 36, 36, 0.8);
+  color: rgb(0, 0, 0);
   margin: 10px 0 0 0;
   font-size: 20px;
 }
@@ -536,49 +505,32 @@ h1, h2, h3, h4, h5, h6 {
   100% {
     transform: translateY(-10px);
   }
-}
-
-.pb_form_v1 {
-  
-  padding: 20px;
-  -webkit-box-shadow: 1px 11px 68px -20px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1px 11px 68px -20px rgba(0, 0, 0, 0.75);
-  box-shadow: 1px 11px 68px -20px rgba(0, 0, 0, 0.75); }
-  @media (max-width: 991px) {
-    .pb_form_v1 {
-      padding: 20px; } }
+};
 
 
 
 input, select, textarea {
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.7); }
+  font-weight: 200;
+  color: rgb(0, 0, 0);
+  
+}
 
-.pb_select-wrap {
-  position: relative; }
-  .pb_select-wrap:before {
-    font-family: 'Ionicons';
- 
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "\f3d0";
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    font-size: 22px; }
-  .pb_select-wrap select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; }
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .375rem;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 
+}
 
 
   
@@ -588,7 +540,7 @@ input, select, textarea {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 100px 0;
+  padding: 20px 0;
   overflow: hidden;
 }
 
@@ -598,7 +550,7 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .section-title h2 {
@@ -629,13 +581,13 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  padding: 120px 0;
+  padding: 30px 0;
 }
 
 .about .content h3 {
   font-weight: 600;
   font-size: 32px;
-  color: #1b5217f2;
+  color: #000000;
 }
 
 .about .content ul {
@@ -720,12 +672,12 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  padding: 70px 20px 80px 20px;
+  padding: 20px 20px 20px 20px;
   transition: all ease-in-out 0.3s;
   border-radius: 25px;
   background: #ffffff;
-  box-shadow:  20px 20px 40px #bababa,
-              -20px -20px 40px #ffffff;
+  box-shadow:  10px 10px 40px #bababa,
+              -10px -10px 40px #ffffff;
 }
 
 .services .icon-box .icon {
