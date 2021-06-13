@@ -386,6 +386,8 @@ h1, h2, h3, h4, h5, h6 {
   background:linear-gradient(-45deg, #dbffcd, #156834, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+  z-index: -1;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
   
 }
 @keyframes gradient {
@@ -401,7 +403,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .container, #hero .container-fluid {
-  padding-top: 84px;
+  padding-top: 40px;
 }
 
 #hero h1 {
@@ -444,15 +446,18 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1200px) {
   #hero {
     background-attachment: fixed;
+    margin-top: -1rem;
   }
 }
 
 @media (max-width: 991px) {
   #hero {
     text-align: center;
+    height: 65rem;
+    
   }
   #hero .container, #hero .container-fluid {
-    padding-top: 68px;
+    padding-top: 1px;
   }
   #hero .animated {
     -webkit-animation: none;
@@ -602,7 +607,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: rgba(111, 124, 74, 0.884);
+  color: rgba(0, 0, 0, 0.884);
 }
 
 .about .content p:last-child {
@@ -629,6 +634,35 @@ section {
   position: relative;
 }
 
+@media (min-width: 1200px) {
+  .about .content .read-more {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+}
+
+@media (max-width: 991px) {
+  .about .content .read-more {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    padding-top: 2rem
+  }
+
+  .about {
+    padding: 10px 2px;
+  }
+}
+
 .about .content .read-more:hover {
   background: linear-gradient(-45deg, #dbffcd, #156834, #23a6d5, #23d5ab);
   background-size: 400% 400%;
@@ -650,6 +684,8 @@ section {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   padding: 80px 0 60px 0;
+  z-index: -1;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .counts .counters span {
@@ -666,6 +702,7 @@ section {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.8);
 }
+
 
 /*--------------------------------------------------------------
 # Services
@@ -948,7 +985,7 @@ section {
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: rgba(111, 124, 74, 0.884);
+  background: rgb(0, 0, 0);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1166,6 +1203,9 @@ section {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
+
+@media (min-width: 1200px) {}
+@media (min-width: 991px) {}
 
 .faq .section-title h2, .faq .section-title p {
   color: #fff;
