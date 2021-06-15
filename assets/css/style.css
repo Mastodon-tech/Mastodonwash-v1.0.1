@@ -452,6 +452,7 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     text-align: center;
     height: 65rem;
+    margin-top: -4rem;
     
   }
   #hero .container, #hero .container-fluid {
