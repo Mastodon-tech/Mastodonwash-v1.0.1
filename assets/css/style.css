@@ -434,7 +434,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .btn-get-started:hover {
   background: #fff;
-  color: rgba(111, 124, 74, 0.884);
+  color: rgba(0, 0, 0, 0.884);
 }
 
 #hero .animated {
@@ -451,7 +451,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991px) {
   #hero {
     text-align: center;
-    height: 65rem;
+    height: 66rem;
     margin-top: -4rem;
     
   }
@@ -554,7 +554,7 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
 .section-title h2 {
