@@ -81,9 +81,7 @@
   z-index: 0;
   overflow: hidden;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none; }
+ }
   .twentytwenty-container img {
     max-width: 100%;
     position: absolute;
@@ -127,7 +125,7 @@
   left: 10px; }
 
 .twentytwenty-horizontal .twentytwenty-after-label:before {
-  right: 10px; }
+  right: -55px; }
 
 .twentytwenty-vertical .twentytwenty-before-label:before {
   top: 10px; }
