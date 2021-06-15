@@ -10,7 +10,7 @@ a {
 }
 
 a:hover {
-  color: #25a825b9;
+  color: #000000b9;
   text-decoration: none;
 }
 
@@ -1707,8 +1707,8 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1720,7 +1720,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.39);
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
