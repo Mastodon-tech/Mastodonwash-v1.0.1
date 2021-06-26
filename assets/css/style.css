@@ -2,7 +2,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
-  overflow-x: hidden;
+  
 }
 
 a {
@@ -109,6 +109,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  margin-right: 80px;
 }
 
 #header.header-scrolled, #header.header-inner-pages {
@@ -266,7 +267,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   .nav-menu .drop-down .drop-down > a:after {
     content: "\ea9d";
+    
   }
+
 }
 
 
@@ -371,7 +374,17 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-active .mobile-nav {
   opacity: 1;
   visibility: visible;
+  
 }
+
+@media (max-width: 1200px) {
+  .mobile-nav-active .mobile-nav {
+    opacity: 1;
+    visibility: visible;
+    
+  }
+}
+@media (max-width: 991px){}
 
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
@@ -448,10 +461,20 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (min-width: 1366px) {
+  #hero {
+    background-attachment: fixed;
+    margin-top: -1rem;
+    text-align: center;
+    height: 55rem;
+    margin-top: -4rem;
+  }
+}
+
 @media (max-width: 991px) {
   #hero {
     text-align: center;
-    height: 66rem;
+    height: 70rem;
     margin-top: -4rem;
     
   }
